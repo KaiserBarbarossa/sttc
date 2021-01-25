@@ -16,3 +16,10 @@ if not os.path.exists('template'):
 	except OSError as e:
 		print(e)
 		pass
+
+if not os.path.exists('content'):
+	try:
+		os.makedirs('content')
+	except OSError as e:
+		print(e)
+		pass
