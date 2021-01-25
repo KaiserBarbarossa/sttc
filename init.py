@@ -23,3 +23,17 @@ if not os.path.exists('content'):
 	except OSError as e:
 		print(e)
 		pass
+
+conf = open('.cfg/sttc.conf', 'w')
+conf.write('''
+[general]
+experimental = false
+
+[compile]
+template = $FOO
+
+[html]
+generator = false
+keywords = false
+doctype = $DOCTYPE
+''')
