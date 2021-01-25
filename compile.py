@@ -10,6 +10,9 @@ if not os.path.exists('.cfg'):
 	sttc -i
 	''')
 
+if not os.path.exists('public'):
+	os.makedirs('public')
+
 files = os.listdir()
 
 for f in files:
@@ -17,7 +20,7 @@ for f in files:
 	if f_ext != '.md':
 		pass
 	else:
-		new_name = f_name + '.html'
+		new_name = 'public/' + f_name + '.html'
 		markdown.markdownFromFile(
 			input=f,
 			output=new_name,
