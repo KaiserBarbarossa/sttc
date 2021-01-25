@@ -25,4 +25,4 @@ for f in files:
 			input=f,
 			output=new_name,
 			encoding='utf8',
-			)
+		)
