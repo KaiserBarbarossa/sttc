@@ -1,0 +1,5 @@
+*.pyc
+public/*
+content/*
+templates/*
+.cfg/*
