@@ -1,5 +1,4 @@
-#!/usr/bin/python
-#TODO: Change shebang
+#!/usr/bin/python3
 
 import os
 
