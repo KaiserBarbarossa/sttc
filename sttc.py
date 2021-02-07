@@ -22,7 +22,7 @@ def main():
 	elif args.init:
 		init()
 	elif args.compile:
-		os.system('python3 compile.py')
+		compile()
 	else:
 		print('You have to provide an argument. For help see:\n  sttc -h')
 
